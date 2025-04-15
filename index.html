@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web3 Portfolio</title>
+  <link rel="shortcut icon" href="./logo1.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .navbar {
+      z-index: 10;
+    }
+
+    .split-container {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .left-section {
+      background-color: #000;
+      color: white;
+      clip-path: polygon(0 0, 95% 0, 85% 100%, 0% 100%);
+      padding: 6rem 2rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      flex: 1.5;
+      position: relative;
+    }
+
+    .left-section h1 {
+      font-weight: bold;
+    }
+
+    .left-section p.lead {
+      font-weight: 500;
+      color: #666;
+    }
+
+    .social-icons a {
+      color: black;
+      font-size: 1.3rem;
+      margin-right: 1rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #555;
+    }
+
+    .right-section {
+      /* background-color: #000; */
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .right-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .split-container {
+        flex-direction: column;
+      }
+
+      .left-section {
+        clip-path: none;
+        align-items: center;
+        text-align: center;
+        padding-top: 5rem;
+      }
+
+      .navbar {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top px-3 text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./logo.png" alt="Logo" width="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-light ms-md-3" href="#contact">CONTACT ME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="split-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-section">
+      <p class="mb-1">Hi, I am</p>
+      <h1>Web3 Prince</h1>
+      <p class="lead mb-4">Web3 Writer</p>
+      <div class="social-icons d-flex">
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-section">
+      <img src="./Group.png" alt="Your photo">
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
